@@ -1,0 +1,18 @@
+{% extends "dashboard/base.html" %}
+{% block content %}
+    {% for book in books %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ book.authors }}</a>
+              <small class="text-muted">{{ book.published_date }}</small>
+              <small class="text-muted">{{ book.publisher }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ book.title }}</a></h2>
+            {% if book.subtitle %}
+              <p class="article-content">{{ book.subtitle }}</p>
+            {% endif %}
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
