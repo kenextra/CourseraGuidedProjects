@@ -1,5 +1,6 @@
 {% extends "dashboard/base.html" %}
 {% block content %}
+<h1 class="mb-3">{{ category }} Category has {{ page_obj.paginator.count }} Books</h1>
     {% for book in books %}
       <article class="content-section">
         <div class="media">

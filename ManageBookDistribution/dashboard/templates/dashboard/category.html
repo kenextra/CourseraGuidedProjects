@@ -1,19 +1,13 @@
 {% extends "dashboard/base.html" %}
 {% block content %}
-    {% for book in books %}
+    {% for category in categories %}
       <article class="content-section">
         <div class="media">
-          <img class="rounded-circle account-img" src="{{ book.image.url }}">
+          <!--<img class="rounded-circle account-img" src="{{ book.image.url }}">-->
           <div class="media-body">
-            <h2><a class="article-title" href="{% url 'book-detail' book.id %}">{{ book.title }}</a></h2>
-            {% if book.subtitle %}
-              <p class="article-content">{{ book.subtitle }}</p>
-            {% endif %}
+            <h2><a class="article-title" href="{% url 'category-detail' category.id %}">{{ category.name }}</a></h2>
           </div>
         </div>
-        <a class="mr-2" href="{% url 'author-books' book.authors %}">{{ book.authors }}</a>
-        <small class="text-muted">{{ book.published_date }}</small>
-        <small class="text-muted">{{ book.publisher }}</small>
       </article>
     {% endfor %}
     {% if is_paginated %}

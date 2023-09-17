@@ -60,6 +60,9 @@ cover/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+ManageBookDistribution/*/migrations/
+ManageBookDistribution/media/profile_pics/*
+ManageBookDistribution/media/book_pics/*
 
 # Flask stuff:
 instance/
