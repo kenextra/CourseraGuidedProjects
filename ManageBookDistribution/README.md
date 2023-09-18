@@ -1,4 +1,4 @@
-# Project
+# Project Title
 [Build an expense tracker app in Django](https://www.coursera.org/projects/showcase-build-expense-tracker-app-django?)
 
 ## Description
