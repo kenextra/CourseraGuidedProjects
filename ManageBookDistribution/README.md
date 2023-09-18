@@ -1,5 +1,9 @@
-# Projects
-[Build an expense tracker app in Django](https://www.coursera.org/learn/showcase-build-expense-tracker-app-django/home/week/1)
+# Project
+[Build an expense tracker app in Django](https://www.coursera.org/projects/showcase-build-expense-tracker-app-django?)
+
+## Description
+This project is a simple expense tracker app that allows users to track their book distribution expenses. The app allows admin user to upload a csv file containing expenses. 
+The app also allows all users to add, edit, delete and view the book distribution expenses in a chart based on book categories.
 
 ## How to run
 1. Clone the repository
