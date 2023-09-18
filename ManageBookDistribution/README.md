@@ -46,7 +46,7 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 9. Open the browser and go to `http://localhost:8000/admin/` to login to the admin panel
-10. Go to `Books`` Model in the admin page, click `import` and upload the `BookDistributionExpenses.csv` file in the `data` folder
+10. Go to `Books` Model in the admin page, click `import` and upload the `BookDistributionExpenses.csv` file in the `data` folder
 11. Go to `http://localhost:8000/` to view the application
 
 
